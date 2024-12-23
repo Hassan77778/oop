@@ -1,0 +1,38 @@
+/* General background for the AnchorPane and MenuBar */
+.anchor-pane, .menu-bar {
+    -fx-background-color: linear-gradient(to bottom, #1e272e, #2f3640); /* Dark gradient theme */
+    -fx-border-color: #57606f; /* Subtle border for the MenuBar */
+    -fx-border-width: 0 0 2px 0; /* Bottom border for MenuBar */
+}
+
+/* Menu button in MenuBar */
+.menu-bar .button {
+    -fx-background-color: transparent; /* Transparent for gradient background */
+    -fx-text-fill: #f5f6fa; /* Light text for contrast */
+    -fx-font-size: 16px;
+    -fx-font-family: "Verdana", sans-serif;
+    -fx-faint-focus-color: transparent; /* Removes faint focus color */
+}
+
+.menu-bar .button:hover {
+    -fx-background-color: #8B0000; /* Dark red background on hover */
+    -fx-border-color: #8B0000; /* Dark red border on hover */
+    -fx-border-radius: 5px; /* Rounded hover effect */
+    -fx-text-fill: #ffffff;
+}
+
+/* Submit button */
+.submit-button {
+    -fx-background-color: transparent; /* Transparent for gradient background */
+    -fx-text-fill: #f5f6fa; /* Light text for contrast */
+    -fx-font-size: 18px;
+    -fx-font-family: "Verdana", sans-serif;
+    -fx-faint-focus-color: transparent; /* Removes faint focus color */
+}
+
+.submit-button:hover {
+    -fx-background-color: #8B0000; /* Dark red background on hover */
+    -fx-border-color: #8B0000; /* Dark red border on hover */
+    -fx-border-radius: 5px; /* Rounded hover effect */
+    -fx-text-fill: #ffffff;
+}

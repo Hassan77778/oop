@@ -1,0 +1,44 @@
+/* General styling for the AnchorPane */
+.anchor-pane {
+    -fx-background-color: #f4f6f9; /* Light background color */
+    -fx-padding: 20px; /* Padding inside the AnchorPane */
+}
+
+/* Styling for the ScrollPane */
+.scroll-pane {
+    -fx-background-color: #ffffff; /* White background for ScrollPane */
+    -fx-border-color: #2c3e50; /* Dark border around the ScrollPane */
+    -fx-border-width: 2px; /* Border thickness */
+    -fx-border-radius: 5px; /* Rounded corners */
+    -fx-padding: 10px; /* Padding inside the ScrollPane */
+}
+
+.scroll-pane .viewport {
+    -fx-background-color: transparent; /* Transparent viewport background */
+}
+
+/* Styling for the VBox */
+.vbox {
+    -fx-spacing: 20px; /* Space between items */
+    -fx-padding: 10px; /* Padding inside the VBox */
+    -fx-background-color: #ecf0f1; /* Light gray background for VBox */
+    -fx-border-color: #bdc3c7; /* Subtle border color */
+    -fx-border-width: 1px; /* Thin border */
+    -fx-border-radius: 5px; /* Rounded corners */
+}
+
+/* Styling for the Back Button */
+.button {
+    -fx-background-color: #3498db; /* Blue background for the button */
+    -fx-text-fill: white; /* White text color */
+    -fx-font-size: 14px; /* Font size for the button */
+    -fx-font-family: "Verdana", sans-serif; /* Font family */
+    -fx-font-weight: bold; /* Bold text */
+    -fx-padding: 10px 20px; /* Padding inside the button */
+    -fx-border-radius: 5px; /* Rounded corners for the button */
+    -fx-cursor: hand; /* Pointer cursor on hover */
+}
+
+.button:hover {
+    -fx-background-color: #2980b9; /* Darker blue on hover */
+}

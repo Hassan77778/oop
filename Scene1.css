@@ -1,0 +1,77 @@
+/* Background for the AnchorPane */
+.anchor-pane {
+    -fx-background-color: #001f3d; /* Deep and intense blue */
+}
+
+/* MenuBar styling */
+.menu-bar {
+    -fx-background-color: #2c3e50; /* Dark Blue bar */
+    -fx-border-color: #2c3e50; /* Matching the menu bar color for borders */
+    -fx-border-width: 0 0 2px 0;
+}
+
+/* Menu button in MenuBar */
+.menu-bar .button {
+    -fx-background-color: transparent;
+    -fx-text-fill: #f5f6fa; /* Light text for contrast */
+    -fx-font-size: 16px;
+    -fx-font-family: "Verdana", sans-serif;
+    -fx-faint-focus-color: transparent; /* Optional: removes the faint focus color */
+}
+
+/* Hover effect for "About Us" button */
+.menu-bar .button:hover {
+    -fx-background-color: #2c3e50; /* Same color as the menu bar */
+    -fx-text-fill: #ffffff; /* White text */
+}
+
+/* Rectangle style */
+.rectangle {
+    -fx-fill: rgba(255, 255, 255, 0.1); /* Subtle transparent white */
+    -fx-stroke: #2c3e50; /* Matching the menu bar color */
+    -fx-stroke-width: 1;
+}
+
+/* Style for the Welcome Label */
+.label {
+    -fx-text-fill: #2c3e50; /* Matching the menu bar color */
+    -fx-font-family: "Arial Black", sans-serif;
+    -fx-font-size: 70px;
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.7), 10, 0.5, 2, 2);
+}
+
+/* Style for Buttons */
+.button {
+    -fx-background-color: #ffffff; /* White background */
+    -fx-text-fill: #001f3d; /* Navy blue text */
+    -fx-font-size: 18px;
+    -fx-font-family: "Arial", sans-serif;
+    -fx-padding: 10px 20px;
+    -fx-border-radius: 10;
+    -fx-background-radius: 10;
+    -fx-border-color: #001f3d; /* Navy blue border color */
+    -fx-border-width: 2px;
+    -fx-cursor: hand;
+    -fx-effect: drop shadow(transparent);
+    -fx-layout-x: 50%;
+    -fx-layout-y: 50%;
+    -fx-translate-x: -50%; /* To center button horizontally */
+    -fx-translate-y: -50%; /* To center button vertically */
+}
+
+/* Hover effect for Buttons (Menu bar color) */
+.button:hover {
+    -fx-background-color: #2c3e50; /* Same color as the menu bar */
+    -fx-border-color: #2c3e50; /* Matching the menu bar color */
+    -fx-text-fill: #ffffff; /* White text */
+    -fx-effect: drop shadow(transparent);
+}
+
+.button:focused {
+    -fx-faint-focus-color: transparent; /* Optional: removes the faint focus color */
+}
+
+/* Background for other elements (unchanged) */
+background {
+    -fx-background-color: #001f3d; /* Navy blue color */
+}

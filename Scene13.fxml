@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #E5E6E8;" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.project123.Scene13Control">
+    <children>
+        <VBox layoutX="83.0" layoutY="67.0" prefHeight="290.0" prefWidth="111.0" spacing="20.0">
+            <children>
+                <Label fx:id="usernameLabel" text="Username: " />
+                <Label fx:id="passwordLabel" text="Password: " />
+                <Label fx:id="dateOfBirthLabel" text="Date of Birth: " />
+                <Label fx:id="genderLabel" text="Gender: " />
+                <Label fx:id="phoneLabel" text="Phone Number: " />
+                <Label fx:id="addressLabel" text="Address: " />
+                <Label fx:id="balanceLabel" text="Balance: " />
+                <Label fx:id="InterestsLabel" text="Interset: " />
+
+            </children>
+        </VBox>
+        <Button fx:id="backButton" layoutX="451.0" layoutY="331.0" mnemonicParsing="false" onAction="#backToPreviousScene" prefHeight="26.0" prefWidth="49.0" style="-fx-background-color: #4B0F0F; -fx-text-fill: white;" text="Back" />
+    </children>
+</AnchorPane>

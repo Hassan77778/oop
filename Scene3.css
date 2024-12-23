@@ -1,0 +1,109 @@
+/* General background for the AnchorPane and MenuBar */
+.anchor-pane, .menu-bar {
+    -fx-background-color: linear-gradient(to bottom, #1e272e, #2f3640); /* Dark gradient theme */
+    -fx-border-color: #57606f; /* Subtle border for the MenuBar */
+    -fx-border-width: 0 0 2px 0; /* Bottom border for MenuBar */
+}
+
+/* Menu button in MenuBar */
+.menu-bar .button {
+    -fx-background-color: transparent; /* Transparent for gradient background */
+    -fx-text-fill: #f5f6fa; /* Light text for contrast */
+    -fx-font-size: 16px;
+    -fx-font-family: "Verdana", sans-serif;
+    -fx-faint-focus-color: transparent; /* Removes faint focus color */
+}
+
+.menu-bar .button:hover {
+    -fx-background-color: #C08766; /* Accent color on hover */
+    -fx-border-radius: 5px; /* Rounded hover effect */
+    -fx-text-fill: #ffffff;
+}
+
+/* General background color for the scene */
+.root {
+    -fx-background-color: #DEDBDB; /* Light neutral background */
+}
+
+/* Styling for Labels */
+.label {
+    -fx-text-fill: #ffffff; /* White text */
+    -fx-font-size: 14px;
+    -fx-font-weight: bold;
+    -fx-font-family: "Verdana", sans-serif;
+}
+
+/* Styling for TextFields (white color) */
+.text-field, .password-field {
+    -fx-background-color: #ffffff; /* White background */
+    -fx-border-color: #343840; /* Dark border for contrast */
+    -fx-border-width: 2px;
+    -fx-border-radius: 5px;
+    -fx-background-radius: 5px;
+    -fx-text-fill: #343840; /* Dark text */
+    -fx-font-size: 14px;
+    -fx-padding: 5px;
+}
+
+/* Styling for Password Fields */
+.password-field {
+    -fx-background-color: #ffffff; /* White background */
+    -fx-border-color: #343840; /* Dark border */
+    -fx-border-width: 2px;
+    -fx-border-radius: 5px;
+    -fx-background-radius: 5px;
+    -fx-text-fill: #343840;
+    -fx-font-size: 14px;
+    -fx-padding: 5px;
+}
+
+/* Styling for Buttons */
+.button {
+    /* White background for buttons */
+    -fx-text-fill: #ffffff; /* Dark text */
+    -fx-border-color: #343840; /* Dark border */
+    -fx-border-width: 2px;
+    -fx-border-radius: 5px;
+    -fx-background-radius: 5px;
+    -fx-font-size: 14px;
+    -fx-font-weight: bold;
+    -fx-padding: 5px;
+}
+
+.button:hover {
+    -fx-background-color: #ffffff; /* White background on hover */
+    -fx-text-fill: #343840; /* Dark text on hover */
+    -fx-border-color: #C08766; /* Accent border color on hover */
+    -fx-border-width: 2px; /* Ensure border width is consistent */
+}
+
+/* Styling for Back and Submit Buttons */
+.back-button, .submit-button {
+    -fx-text-fill: #000000; /* Black text */
+}
+
+.back-button:hover, .submit-button:hover {
+    -fx-text-fill: #000000; /* Black text on hover */
+}
+
+/* Styling for ToggleButton */
+.toggle-button {
+    -fx-background-color: #ffffff; /* White background for toggle buttons */
+    -fx-border-color: #343840; /* Dark border */
+    -fx-border-width: 2px;
+    -fx-border-radius: 5px;
+    -fx-background-radius: 5px;
+    -fx-text-fill: #343840; /* Dark text */
+}
+
+.toggle-button:selected {
+    -fx-background-color: #C08766; /* Accent color when selected */
+    -fx-text-fill: #ffffff; /* White text when selected */
+}
+
+/* Styling for the Rectangle */
+.rectangle {
+    -fx-fill: rgba(255, 255, 255, 0.1); /* Subtle transparent white */
+    -fx-stroke: #dcdde1; /* Light border */
+    -fx-stroke-width: 1;
+}

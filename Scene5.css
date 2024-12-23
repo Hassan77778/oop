@@ -1,0 +1,61 @@
+/* General styling for the AnchorPane */
+.anchor-pane {
+    -fx-background-color: #f4f6f9; /* Light background color */
+}
+
+/* Styling for the MenuBar */
+.menu-bar {
+    -fx-background-color: #2c3e50; /* Dark background for MenuBar */
+    -fx-border-color: #34495e; /* Subtle border color */
+    -fx-border-width: 0 0 2px 0; /* Bottom border */
+}
+
+/* Styling for Logout Button in MenuBar */
+.menu-bar .button {
+    -fx-background-color: transparent; /* Transparent background */
+    -fx-text-fill: #ffffff; /* White text */
+    -fx-font-size: 12px; /* Smaller font size */
+    -fx-font-family: "Verdana", sans-serif; /* Font family */
+    -fx-padding: 8px 16px; /* Padding around text */
+    -fx-border: none; /* No border */
+    -fx-font-weight: normal; /* Normal font weight */
+}
+
+/* Styling for Logout Button Text on Hover */
+.menu-bar .button:hover {
+    -fx-background-color: transparent; /* No background color on hover */
+    -fx-text-fill: #ffffff; /* Keep text white */
+}
+
+/* Styling for the welcome text */
+.text {
+    -fx-fill: #2c3e50; /* Dark text color */
+    -fx-font-size: 20px; /* Minimized font size for text */
+    -fx-font-family: "Arial", sans-serif; /* Font family */
+    -fx-font-weight: normal; /* Normal text weight */
+}
+
+/* Styling for the ChoiceBox */
+.choice-box {
+    -fx-background-color: #ffffff; /* White background */
+    -fx-border-color: #2c3e50; /* Dark border */
+    -fx-border-width: 2px; /* Border width */
+    -fx-border-radius: 5px; /* Rounded borders */
+    -fx-font-size: 12px; /* Smaller font size */
+    -fx-padding: 5px; /* Padding around text */
+}
+
+/* Styling for the Go Button */
+.button {
+    -fx-background-color: #3498db; /* Blue background for the button */
+    -fx-text-fill: white; /* White text */
+    -fx-border-radius: 5px; /* Rounded corners */
+    -fx-font-size: 12px; /* Smaller font size */
+    -fx-font-weight: normal; /* Normal font weight */
+    -fx-padding: 8px 16px; /* Padding around text */
+}
+
+.button:hover {
+    -fx-background-color: #2980b9; /* Darker blue on hover */
+    -fx-border-radius: 5px; /* Rounded corners on hover */
+}

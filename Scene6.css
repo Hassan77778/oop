@@ -1,0 +1,49 @@
+/* General styling for the VBox */
+.vbox {
+    -fx-background-color: #f4f6f9; /* Light background color */
+    -fx-spacing: 20px; /* Space between children */
+    -fx-padding: 20px; /* Padding inside the VBox */
+    -fx-alignment: top-center; /* Center alignment for children */
+}
+
+/* Styling for Buttons */
+.button {
+    -fx-background-color: #3498db; /* Blue background for buttons */
+    -fx-text-fill: white; /* White text color */
+    -fx-font-size: 14px; /* Font size */
+    -fx-font-family: "Verdana", sans-serif; /* Font family */
+    -fx-font-weight: bold; /* Bold text */
+    -fx-padding: 10px 20px; /* Padding for buttons */
+    -fx-border-radius: 5px; /* Rounded corners */
+    -fx-cursor: hand; /* Pointer cursor on hover */
+}
+
+.button:hover {
+    -fx-background-color: #2980b9; /* Darker blue on hover */
+}
+
+/* Styling for the Label */
+.label {
+    -fx-text-fill: #2c3e50; /* Dark text color */
+    -fx-font-size: 24px; /* Font size for the title */
+    -fx-font-weight: bold; /* Bold text for emphasis */
+    -fx-font-family: "Arial", sans-serif; /* Font family */
+}
+
+/* Styling for the GridPane */
+.grid-pane {
+    -fx-background-color: #ffffff; /* White background for grid */
+    -fx-border-color: #2c3e50; /* Dark border around grid */
+    -fx-border-width: 2px; /* Border thickness */
+    -fx-border-radius: 5px; /* Rounded corners for the grid */
+    -fx-padding: 20px; /* Padding inside the grid */
+    -fx-hgap: 20px; /* Horizontal gap between grid cells */
+    -fx-vgap: 20px; /* Vertical gap between grid cells */
+}
+
+/* Styling for GridPane content */
+.grid-pane .label {
+    -fx-text-fill: #2c3e50; /* Dark text for content labels */
+    -fx-font-size: 16px; /* Font size for grid content */
+    -fx-font-family: "Verdana", sans-serif; /* Font family */
+}

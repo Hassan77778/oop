@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane xmlns:fx="http://javafx.com/fxml"
+            fx:controller="com.example.project123.Scene8Control">
+
+    <!-- Title Label -->
+    <Label text="Your Receipt" layoutX="20.0" layoutY="20.0" style="-fx-font-size: 24px; -fx-font-weight: bold;" />
+
+    <!-- VBox for dynamically displaying products -->
+    <VBox fx:id="productPane" layoutX="20.0" layoutY="70.0" prefWidth="460.0" spacing="10.0">
+        <!-- Dynamic content for products will be added here -->
+    </VBox>
+
+    <!-- Total Price Label -->
+    <Label fx:id="totalPriceLabel" layoutX="20.0" layoutY="400.0" text="Total Price: $0.00" style="-fx-font-size: 16px;" />
+
+    <!-- Back Button -->
+    <Button text="Back" layoutX="20.0" layoutY="450.0" onAction="#backToPreviousScene" style="-fx-font-size: 14px;" />
+</AnchorPane>

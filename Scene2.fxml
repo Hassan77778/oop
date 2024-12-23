@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ToggleButton?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="636.0" prefWidth="810.0" style="-fx-background-color: #E5E6E8;" stylesheets="@Scene2.css" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.project123.Scene2Control">
+    <children>
+        <!-- Background Rectangle -->
+        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#2c3e50" height="246.0" layoutX="269.0" layoutY="180.0" stroke="BLACK" strokeType="INSIDE" width="287.0" AnchorPane.leftAnchor="269.0" AnchorPane.topAnchor="180.0" />
+
+        <!-- Name Field and Label -->
+        <TextField fx:id="name" promptText="Enter UserName" AnchorPane.leftAnchor="353.0" AnchorPane.topAnchor="215.0" />
+        <Label text="Name" textFill="WHITE" AnchorPane.leftAnchor="307.0" AnchorPane.topAnchor="219.0" />
+
+        <!-- Password Field and Label -->
+        <PasswordField fx:id="password" promptText="Enter Password" AnchorPane.leftAnchor="353.0" AnchorPane.topAnchor="267.0" />
+        <Label text="Password" textFill="WHITE" AnchorPane.leftAnchor="298.0" AnchorPane.topAnchor="271.0" />
+
+        <!-- Submit Button -->
+        <Button fx:id="submitButton" layoutX="451.2" layoutY="362.4" onAction="#submit" prefHeight="28.0" prefWidth="58.0" style="-fx-background-color: #4B0F0F; -fx-text-fill: white;" text="Submit" AnchorPane.leftAnchor="451.0" AnchorPane.topAnchor="362.0" />
+
+        <!-- Menu Bar -->
+        <MenuBar layoutX="-1.0" layoutY="1.0" prefHeight="34.0" prefWidth="810.0" style="-fx-background-color: #082036;">
+            <menus>
+                <Menu mnemonicParsing="false" />
+                <Menu mnemonicParsing="false">
+                    <graphic>
+                        <Button mnemonicParsing="false" onAction="#changeToScene1" prefHeight="29.0" prefWidth="64.0" style="-fx-background-color: #4B0F0F;" text="Back" />
+                    </graphic>
+                </Menu>
+            </menus>
+        </MenuBar>
+
+        <TextField fx:id="peekfield" visible="false" AnchorPane.leftAnchor="353.0" AnchorPane.topAnchor="267.0" />
+        <ToggleButton fx:id="peekButton" layoutX="504.0" layoutY="267.0" prefHeight="16.0" prefWidth="14.0" AnchorPane.leftAnchor="504.0" AnchorPane.topAnchor="267.0" />
+
+    </children>
+</AnchorPane>

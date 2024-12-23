@@ -1,0 +1,126 @@
+/* Scene7.css */
+
+/* AnchorPane styling */
+.root-pane {
+    -fx-background-color: #f5f5f5; /* Light beige background for a calm atmosphere */
+}
+
+/* Label for total price */
+#totalPriceLabel {
+    -fx-font-family: Arial;
+    -fx-font-size: 14px;
+    -fx-text-fill: #6d6d6d; /* Soft gray for text */
+    -fx-background-color: #fff; /* White background */
+    -fx-padding: 5 10;
+    -fx-border-radius: 5px;
+    -fx-border-color: #e0e0e0; /* Light gray border for subtle distinction */
+    -fx-border-width: 1px;
+}
+
+/* Buttons */
+.button {
+    -fx-font-family: Arial;
+    -fx-font-size: 14px;
+    -fx-text-fill: #fff; /* White text for buttons */
+    -fx-background-color: #d0c4a1; /* Beige color for buttons */
+    -fx-background-radius: 5px;
+    -fx-padding: 10 15;
+    -fx-cursor: hand;
+}
+
+/* Hover effect for buttons */
+.button:hover {
+    -fx-background-color: #c4b79a; /* Slightly darker beige for hover effect */
+}
+
+/* Pressed effect for buttons */
+.button:pressed {
+    -fx-background-color: #b8a88a; /* Darker beige for pressed state */
+}
+
+/* Back Button specific styling */
+#backButton {
+    -fx-background-color: #c4a88d;
+    -fx-font-weight: bold;
+    -fx-border-radius: 5;
+    -fx-border-color: #b38c6c;
+    -fx-border-width: 1px;
+    -fx-padding: 8 16;
+}
+
+#backButton:hover {
+    -fx-background-color: #b38c6c;
+}
+
+/* Checkout Button specific styling */
+#checkoutButton {
+    -fx-background-color: #c4a88d;
+    -fx-font-weight: bold;
+    -fx-border-radius: 5;
+    -fx-border-color: #b38c6c;
+    -fx-border-width: 1px;
+    -fx-padding: 8 16;
+}
+
+#checkoutButton:hover {
+    -fx-background-color: #b38c6c;
+}
+
+/* Add Product Button specific styling */
+#addProductButton {
+    -fx-background-color: #c4a88d;
+    -fx-font-weight: bold;
+    -fx-border-radius: 5;
+    -fx-border-color: #b38c6c;
+    -fx-border-width: 1px;
+    -fx-padding: 8 16;
+}
+
+#addProductButton:hover {
+    -fx-background-color: #b38c6c;
+}
+
+/* VBox styling for the product list */
+#productPane {
+    -fx-background-color: #fff; /* White background for the product list */
+    -fx-border-radius: 5px;
+    -fx-border-color: #e0e0e0; /* Light gray border */
+    -fx-border-width: 1px;
+    -fx-padding: 10px;
+    -fx-spacing: 10px;
+}
+
+/* Product container (for individual products in the product list) */
+.product-container {
+    -fx-background-color: #f9f9f9; /* Very light beige for product containers */
+    -fx-padding: 10px;
+    -fx-border-radius: 5px;
+    -fx-border-color: #e0e0e0;
+    -fx-border-width: 1px;
+}
+
+/* Label styling inside product containers */
+.product-container Label {
+    -fx-font-size: 14px;
+    -fx-text-fill: #6d6d6d;
+}
+
+/* General Text Field Styling */
+.text-field {
+    -fx-background-color: #fff;
+    -fx-border-color: #e0e0e0;
+    -fx-border-radius: 5px;
+    -fx-padding: 5px;
+}
+
+/* Focused text field styling */
+.text-field:focused {
+    -fx-border-color: #d0c4a1; /* Change border color when focused */
+}
+
+/* Customize the button size and padding */
+.button {
+    -fx-font-size: 16px;
+    -fx-padding: 8 20;
+    -fx-background-color: #d0c4a1; /* Beige color */
+}

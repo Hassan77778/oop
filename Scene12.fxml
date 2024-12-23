@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox alignment="CENTER" prefHeight="499.0" prefWidth="600.0" spacing="10" style="-fx-background-color: #E5E6E8;" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.project123.Scene12Control">
+    <MenuBar style="-fx-background-color: #082036;">
+        <menus>
+            <Menu mnemonicParsing="false">
+                <graphic>
+                    <Button mnemonicParsing="false" onAction="#LogoutHandle" style="-fx-background-color: #4B0F0F; -fx-text-fill: white;" text="Log out" />
+                </graphic>
+            </Menu>
+            <Menu mnemonicParsing="false">
+                <graphic>
+                    <Button mnemonicParsing="false" onAction="#changeToScene5" style="-fx-background-color: #4B0F0F; -fx-text-fill: white;" text="Back" />
+                </graphic>
+            </Menu>
+        </menus>
+    </MenuBar>
+    <Label prefHeight="21.0" prefWidth="91.0" style="-fx-font-size: 18px; -fx-font-weight: bold; -fx-text-fill: #082036;" text="Orders List" />
+
+    <TextArea fx:id="ordersTextArea" editable="false" prefHeight="422.0" prefWidth="600" style="-fx-background-color: #E5E6E8;" wrapText="true" />
+</VBox>

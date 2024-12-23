@@ -1,0 +1,81 @@
+/* General styles */
+.root {
+    -fx-background-color: #DEDBDB; /* Light grey background */
+}
+
+/* ScrollPane */
+.scroll-pane {
+    -fx-background: #DEDBDB; /* Light grey */
+    -fx-border-color: #343840; /* Dark grey */
+}
+
+/* MenuBar */
+.menu-bar {
+   -fx-background-color: linear-gradient(to bottom, #1e272e, #2f3640); /* Dark gradient theme */
+    -fx-border-color: #57606f; /* Subtle border for the MenuBar */
+    -fx-border-width: 1px;
+}
+
+/* Buttons */
+.button {
+    -fx-background-color: #C08766; /* Light brown */
+    -fx-text-fill: #343840; /* Dark grey text */
+    -fx-font-size: 14px;
+    -fx-border-color: #343840; /* Dark grey border */
+    -fx-border-width: 1px;
+    -fx-padding: 5px 10px;
+    -fx-cursor: hand;
+}
+
+.button:hover {
+    -fx-background-color: #EFC0A6; /* Beige hover */
+}
+
+/* Labels */
+.label {
+    -fx-text-fill: #343840; /* Dark grey text */
+    -fx-font-weight: bold;
+}
+
+/* TextField */
+.text-field {
+    -fx-background-color: #DEDBDB; /* Light grey */
+    -fx-text-fill: #343840; /* Dark grey text */
+    -fx-border-color: #343840; /* Dark grey border */
+    -fx-border-width: 1px;
+    -fx-padding: 5px;
+}
+
+/* ListView */
+.list-view {
+    -fx-background-color: #DEDBDB; /* Light grey */
+    -fx-border-color: #343840; /* Dark grey */
+    -fx-text-fill: #343840; /* Dark grey text */
+    -fx-font-size: 14px;
+}
+
+/* VBox */
+.vbox {
+    -fx-background-color: #EFC0A6; /* Beige */
+    -fx-padding: 10;
+    -fx-border-color: #343840; /* Dark grey */
+    -fx-border-width: 1px;
+}
+
+/* Category VBox */
+#CategoryVbox {
+    -fx-background-color: #DEDBDB; /* Light grey */
+}
+
+/* HBox */
+.hbox {
+    -fx-background-color: #EFC0A6; /* Beige */
+    -fx-padding: 10;
+}
+
+/* ChoiceBox */
+.choice-box {
+    -fx-background-color: #DEDBDB; /* Light grey */
+    -fx-text-fill: #343840; /* Dark grey text */
+    -fx-border-color: #343840; /* Dark grey */
+}

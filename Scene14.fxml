@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<AnchorPane accessibleText="a" prefHeight="646.0" prefWidth="809.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.project123.Scene14Control" stylesheets="@Scene7.css">
+    <children>
+        <ScrollPane fx:id="scrollpane" layoutX="-3.0" layoutY="396.0" prefHeight="248.0" prefWidth="809.0">
+            <content>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="200.0" prefWidth="200.0">
+                    <children>
+                        <VBox fx:id="CategoryVbox" prefHeight="200.0" prefWidth="204.0" />
+                    </children>
+                </AnchorPane>
+            </content>
+        </ScrollPane>
+        <HBox alignment="CENTER" layoutY="27.0" prefHeight="60.0" prefWidth="810.0" spacing="15" style="-fx-background-color: #f4f4f4; -fx-padding: 10;">
+            <children>
+                <Label style="-fx-font-size: 16px;" text="Search Products:" />
+                <TextField fx:id="searchbar" promptText="Enter product name..." style="-fx-font-size: 14px;" />
+                <Button fx:id="search" onAction="#search1" style="-fx-font-size: 14px;" text="Search" />
+            </children>
+        </HBox>
+        <MenuBar layoutY="1.0" prefHeight="26.0" prefWidth="810.0">
+            <menus>
+                <Menu mnemonicParsing="false">
+                    <graphic>
+                        <ChoiceBox fx:id="Categ" prefWidth="150.0" />
+                    </graphic>
+                </Menu>
+                <Menu mnemonicParsing="false">
+                    <graphic>
+                        <Button fx:id="select" mnemonicParsing="false" onAction="#select" text="Select Category" />
+                    </graphic>
+                </Menu>
+                <Menu mnemonicParsing="false">
+                    <graphic>
+                        <Button fx:id="aboutUs" mnemonicParsing="false" onAction="#changeToScene9" text="About Us" />
+                    </graphic>
+                </Menu>
+                <Menu mnemonicParsing="false">
+                    <graphic>
+                        <Button fx:id="Logout" mnemonicParsing="false" onAction="#changeToScene1" text="Logout" />
+                    </graphic>
+                </Menu>
+                <Menu mnemonicParsing="false">
+                    <graphic>
+                        <Button mnemonicParsing="false" onAction="#changeToScene13" text="View Profile" />
+                    </graphic>
+                </Menu>
+            </menus>
+        </MenuBar>
+        <VBox fx:id="vboxsearch" layoutX="260.0" layoutY="87.0" prefHeight="306.0" prefWidth="287.0" spacing="10" style="-fx-background-color: #f9f9f9; -fx-padding: 10; -fx-border-color: #ccc; -fx-border-width: 1;">
+            <children>
+                <Label style="-fx-font-size: 16px; -fx-font-weight: bold;" text="Search Results" translateX="75.0" />
+                <!-- Add an onMouseClicked event to trigger the handleItemSelected method in the controller -->
+                <ListView fx:id="listView" prefHeight="242.0" prefWidth="265.0" style="-fx-font-size: 14px;" onMouseClicked="#handleItemSelected" />
+            </children>
+        </VBox>
+    </children>
+</AnchorPane>
