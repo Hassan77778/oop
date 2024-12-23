@@ -22,9 +22,9 @@ public class Scene7Control implements Initializable {
     private Customer customer;
 
     @FXML
-    private VBox productPane; // Changed to VBox for better layout handling
+    private VBox productPane; 
     @FXML
-    private Label totalPriceLabel; // Label to display total price
+    private Label totalPriceLabel; 
 
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
@@ -51,25 +51,25 @@ public class Scene7Control implements Initializable {
             int quantity = entry.getValue();
             double price = product.getPrice() * quantity;
 
-            // Create HBox for each product
-            HBox productBox = new HBox(20); // 20px spacing between items
+            
+            HBox productBox = new HBox(20); 
 
-            // Create and style labels
+            
             Label productName = new Label("Product: " + product.getName());
             Label productQuantity = new Label("Quantity: " + quantity);
             Label productPrice = new Label("Price: $" + String.format("%.2f", price));
 
-            // Add all components to HBox
+            
             productBox.getChildren().addAll(productName, productQuantity, productPrice);
 
-            // Add productBox to productPane
+            
             productPane.getChildren().add(productBox);
 
-            // Add to total price
+            
             totalPrice += price;
         }
 
-        // Set total price
+    
         totalPriceLabel.setText("Total Price: $" + String.format("%.2f", totalPrice));
     }
 
