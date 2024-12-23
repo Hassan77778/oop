@@ -2,7 +2,7 @@
 
 /* Root pane styling */
 .root-pane {
-    -fx-background-color: #f9f9f9; /* Light gray background for clean look */
+    -fx-background-color: #f9f9f9; 
 }
 
 /* Header Rectangle */
@@ -16,14 +16,14 @@
 .title-text {
     -fx-font-size: 48px;
     -fx-font-weight: bold;
-    -fx-text-fill: #FFFFFF; /* White color for contrast */
+    -fx-text-fill: #FFFFFF; 
 }
 
 /* Description Text Styling */
 .description-text {
     -fx-font-size: 18px;
-    -fx-text-fill: #333333; /* Dark gray for readability */
-    -fx-line-spacing: 8px;  /* Space between lines */
+    -fx-text-fill: #333333; 
+    -fx-line-spacing: 8px;  
     -fx-font-family: "Arial";
 }
 
@@ -42,9 +42,9 @@
 }
 
 .back-button:hover {
-    -fx-background-color: #357ABD; /* Darker blue when hovered */
+    -fx-background-color: #357ABD; 
 }
 
 .back-button:pressed {
-    -fx-background-color: #2B6CA3; /* Even darker on press */
+    -fx-background-color: #2B6CA3; 
 }
