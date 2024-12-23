@@ -74,17 +74,17 @@ public class Scene5Control implements Initializable {
     }
     public void changeToScene10(ActionEvent event) {
         try {
-            // Load the FXML file for Scene 4
+         
             FXMLLoader loader = new FXMLLoader(getClass().getResource("/com/example/project123/Scene10.fxml"));
             Parent root = loader.load();
 
-            // Get the Scene4 controller
+           
             Scene10Control scene10Controller = loader.getController();
 
-            // Pass the username and password to Scene4 controller
+         
             scene10Controller.setAdmin(admin);
 
-            // Switch to the new scene
+            
             Stage stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
             Scene scene = new Scene(root);
             stage.setScene(scene);
@@ -95,14 +95,14 @@ public class Scene5Control implements Initializable {
     }
     public void changeToScene11(ActionEvent event) {
         try {
-            // Load the FXML file for Scene 4
+         
             FXMLLoader loader = new FXMLLoader(getClass().getResource("/com/example/project123/Scene11.fxml"));
             Parent root = loader.load();
 
-            // Get the Scene4 controller
+       
             Scene11Control scene11Controller = loader.getController();
 
-            // Pass the username and password to Scene4 controller
+        
             scene11Controller.setAdmin(admin);
 
             // Switch to the new scene
@@ -120,11 +120,9 @@ public class Scene5Control implements Initializable {
             // Load the FXML file for Scene 4
             FXMLLoader loader = new FXMLLoader(getClass().getResource("/com/example/project123/Scene12.fxml"));
             Parent root = loader.load();
-
-            // Get the Scene4 controller
             Scene12Control scene12Controller = loader.getController();
 
-            // Pass the username and password to Scene4 controller
+ 
             scene12Controller.setAdmin(admin);
 
             // Switch to the new scene
@@ -139,17 +137,15 @@ public class Scene5Control implements Initializable {
 
     public void changeToScene4(ActionEvent event) {
         try {
-            // Load the FXML file for Scene 4
+         
             FXMLLoader loader = new FXMLLoader(getClass().getResource("/com/example/project123/Scene4.fxml"));
             Parent root = loader.load();
 
-            // Get the Scene4 controller
             Scene4Control scene4Controller = loader.getController();
 
-            // Pass the username and password to Scene4 controller
             scene4Controller.setAdmin(admin);
 
-            // Switch to the new scene
+         
             Stage stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
             Scene scene = new Scene(root);
             stage.setScene(scene);
@@ -160,17 +156,15 @@ public class Scene5Control implements Initializable {
     }
     public void changeToScene15(ActionEvent event) {
         try {
-            // Load the FXML file for Scene 4
+
             FXMLLoader loader = new FXMLLoader(getClass().getResource("/com/example/project123/Scene15.fxml"));
             Parent root = loader.load();
-
-            // Get the Scene4 controller
+\
             Scene15Control scene15Controller = loader.getController();
 
-            // Pass the username and password to Scene4 controller
+ 
             scene15Controller.setAdmin(admin);
 
-            // Switch to the new scene
             Stage stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
             Scene scene = new Scene(root);
             stage.setScene(scene);
