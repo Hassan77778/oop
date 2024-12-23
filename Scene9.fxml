@@ -12,16 +12,15 @@
             stylesheets="@Scene9.css"
             styleClass="root-pane">
 
-    <!-- Header Rectangle -->
     <Rectangle layoutX="0" layoutY="0" width="800" height="150" styleClass="header"/>
 
-    <!-- Title Label -->
+    
     <Label layoutX="250" layoutY="50" text="About Us" styleClass="title-text"/>
 
-    <!-- Description Label -->
+
     <Label layoutX="50" layoutY="180" prefWidth="700" wrapText="true" styleClass="description-text"
            text="Welcome to our application!\n\nOur mission is to deliver exceptional quality and user-friendly experiences using modern technologies. Our team is committed to innovation, performance, and ensuring customer satisfaction. Let us know your thoughts and suggestions!"/>
 
-    <!-- Back Button -->
+
     <Button layoutX="350" layoutY="500" text="Back" onAction="#changeToScene14" styleClass="back-button"/>
 </AnchorPane>
