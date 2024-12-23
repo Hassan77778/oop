@@ -25,23 +25,23 @@ public class Scene8Control implements Initializable {
     private Customer customer;
     public Order order=new Order();
     @FXML
-    private VBox productPane; // VBox for dynamically displaying products
+    private VBox productPane; 
 
     @FXML
-    private Label totalPriceLabel; // Label to display total price
+    private Label totalPriceLabel; 
 
     @FXML
-    private Label customerNameLabel; // Label to display customer name
+    private Label customerNameLabel; 
 
     @FXML
-    private Label customerNumberLabel; // Label to display customer number
+    private Label customerNumberLabel; 
 
     @FXML
-    private Label customerAddressLabel; // Label to display customer address
+    private Label customerAddressLabel; 
     private double totalPrice = 0.0;
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
-        // Initialization logic if needed
+        
     }
 
     public void setCustomer(Customer customer) {
@@ -53,13 +53,13 @@ public class Scene8Control implements Initializable {
             throw new IllegalStateException("FXML components are not initialized. Check FXML file.");
         }
 
-        // Set customer details
+        
         customerNameLabel.setText(customer.getUsername());
         customerNumberLabel.setText(customer.getPhonenumber());
         customerAddressLabel.setText(customer.getAddress());
 
-        // Display products in the cart
-        productPane.getChildren().clear(); // Clear any existing content
+        
+        productPane.getChildren().clear(); 
 
         for (Map.Entry<Product, Integer> entry : customer.getcartt().getCartMap().entrySet()) {
             Product product = entry.getKey();
@@ -72,17 +72,17 @@ public class Scene8Control implements Initializable {
             Label productQuantity = new Label("Quantity: " + quantity);
             Label productPrice = new Label("Price: $" + String.format("%.2f", price));
 
-            // Add all components to HBox
+            
             productBox.getChildren().addAll(productName, productQuantity, productPrice);
 
-            // Add productBox to productPane
+            
             productPane.getChildren().add(productBox);
 
-            // Add to total price
+        
             totalPrice += price;
         }
 
-        // Set total price
+        
         totalPriceLabel.setText("Total Price: $" + String.format("%.2f", totalPrice));
     }
 
@@ -109,7 +109,7 @@ public class Scene8Control implements Initializable {
                 alert.setHeaderText(null);
                 alert.setContentText("insufficent balance. ");
                 alert.showAndWait();
-                return; // Exit the method without transitioning to Scene8
+                return; 
             } else {
                 Alert alert = new Alert(Alert.AlertType.INFORMATION);
                 alert.setTitle("Cart is Empty");
