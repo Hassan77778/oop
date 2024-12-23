@@ -9,20 +9,17 @@
         <!-- Dynamic content for products will be added here -->
     </VBox>
 
-    <!-- Label to show the total price of the products in the cart -->
+
     <Label fx:id="totalPriceLabel" layoutX="10.0" layoutY="200.0" text="Total Price: $0.00">
         <font>
             <Font name="Arial" size="14" />
         </font>
     </Label>
 
-    <!-- Button to navigate back to the previous scene -->
     <Button text="Back" layoutX="10.0" layoutY="250.0" onAction="#backToPreviousScene"/>
 
-    <!-- Checkout Button -->
     <Button text="Checkout" layoutX="100.0" layoutY="250.0" onAction="#changeToScene8" fx:id="checkoutButton" styleClass="checkout-button"/>
 
-    <!-- Add Product Button -->
     <Button text="Add Product" layoutX="200.0" layoutY="250.0" fx:id="addProductButton" styleClass="add-product-button"/>
 
 </AnchorPane>
