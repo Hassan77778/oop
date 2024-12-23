@@ -21,30 +21,28 @@ import java.util.ResourceBundle;
 
 public class Scene6Control implements Initializable {
     @FXML
-    private VBox productVBox; // The VBox where we will display products
+    private VBox productVBox; 
     @FXML
-    private GridPane productGrid; // For displaying products in a grid layout
+    private GridPane productGrid; 
     @FXML
-    private Label sceneTitle; // Label to display the scene title (e.g., category name)
+    private Label sceneTitle; 
 
-    private Category category; // Store the selected category
-    private Customer customer; // Store the customer object
-    private boolean isInitialized = false; // Flag to indicate FXML initialization
-    private boolean pendingCategory = false; // Flag for delayed category display
+    private Category category; 
+    private Customer customer; 
+    private boolean isInitialized = false; 
+    private boolean pendingCategory = false; 
 
     // Method to set the customer
     public void setCustomer(Customer customer) {
         this.customer = customer;
     }
 
-    // Method to set the category before initialize is called
     public void setCat(String catee) {
         if (catee == null || catee.isEmpty()) {
             System.out.println("Category name is null or empty.");
             return;
         }
 
-        // Find the category in the database
         for (Category category : Database.categories) {
             if (category.getName().equalsIgnoreCase(catee)) {
                 this.category = category;
@@ -55,25 +53,24 @@ public class Scene6Control implements Initializable {
         if (this.category != null) {
             System.out.println("Selected category is: " + category.getName());
 
-            // Update the title if FXML is initialized
+     
             if (isInitialized) {
                 updateSceneTitle();
                 DisplayRecommended();
             } else {
-                pendingCategory = true; // Defer updates until initialization
+                pendingCategory = true; 
             }
         } else {
             System.out.println("Category not found in the database.");
         }
     }
 
-    // The initialize method from Initializable interface
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
         isInitialized = true; // Mark FXML initialization complete
         System.out.println("Scene6 initialized. Waiting for category to be set.");
 
-        // If a category was set before initialization, update the title and display products
+
         if (pendingCategory) {
             updateSceneTitle();
             DisplayRecommended();
@@ -81,14 +78,12 @@ public class Scene6Control implements Initializable {
         }
     }
 
-    // Update the scene title based on the selected category
     private void updateSceneTitle() {
         if (sceneTitle != null && category != null) {
             sceneTitle.setText(category.getName() + ": Products");
         }
     }
 
-    // Method to display products based on the selected category
     private void DisplayRecommended() {
         if (category == null || productGrid == null) {
             System.out.println("Category or product grid is null.");
@@ -144,14 +139,14 @@ public class Scene6Control implements Initializable {
     @FXML
     public void backToPreviousScene(ActionEvent event) {
         try {
-            // Load the FXML file for Scene 14
+
             FXMLLoader loader = new FXMLLoader(getClass().getResource("/com/example/project123/Scene14.fxml"));
             Parent root = loader.load();
 
-            // Get the Scene14 controller
+        
             Scene14Control scene14Controller = loader.getController();
 
-            // Pass the customer to Scene14 controller
+         
             scene14Controller.setCustomer(customer);
 
             // Switch to the new scene
