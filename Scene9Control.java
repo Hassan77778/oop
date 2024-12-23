@@ -36,13 +36,13 @@ public class Scene9Control {
             FXMLLoader loader = new FXMLLoader(getClass().getResource("/com/example/project123/Scene14.fxml"));
             Parent root = loader.load();
 
-            // Get the Scene4 controller
+            
             Scene14Control scene14Controller = loader.getController();
 
-            // Pass the username and password to Scene4 controller
+            
             scene14Controller.setCustomer(customer);
 
-            // Switch to the new scene
+            
             Stage stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
             Scene scene = new Scene(root);
             stage.setScene(scene);
@@ -52,17 +52,17 @@ public class Scene9Control {
         }
     }
 
-    // Open Instagram Page 1
+
     public void openInstagram1(ActionEvent event) {
         openWebPage("https://www.instagram.com/yourpage1");
     }
 
-    // Open Instagram Page 2
+    
     public void openInstagram2(ActionEvent event) {
         openWebPage("https://www.instagram.com/yourpage2");
     }
 
-    // Utility method to open URLs
+    
     private void openWebPage(String url) {
         if (Desktop.isDesktopSupported()) {
             try {
